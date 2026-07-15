@@ -25,12 +25,12 @@ PM=$(detect_pm)
 echo "Installing dependencies..."
 if [ "$PM" = "dnf" ]; then
     sudo dnf group install -y mate-desktop mate-applications
-    sudo dnf install -y cairo-dock conky dconf
+    sudo dnf install -y cairo-dock conky dconf compiz compiz-manager ccsm emerald emerald-themes simple-ccsm fusion-icon compiz-plugins-main compiz-plugins-extra compiz-plugins-experimental
 elif [ "$PM" = "apt" ]; then
     sudo apt-get update
-    sudo apt-get install -y mate-desktop-environment cairo-dock conky-all dconf-cli
+    sudo apt-get install -y mate-desktop-environment cairo-dock conky-all dconf-cli compiz compiz-boxmenu compizconfig-settings-manager emerald
 else
-    echo "Warning: Unknown package manager. Please make sure MATE, Cairo-Dock, Conky, and dconf are installed manually."
+    echo "Warning: Unknown package manager. Please make sure MATE, Cairo-Dock, Conky, Compiz, Emerald, and dconf are installed manually."
 fi
 
 # 2. Copy Theme Assets
@@ -65,6 +65,22 @@ if [ -d "configs/cairo-dock" ]; then
     cp -r configs/cairo-dock ~/.config/
 fi
 
+# Copy Compiz config
+if [ -d "configs/compiz" ]; then
+    if [ -d "$HOME/.config/compiz" ]; then
+        mv ~/.config/compiz ~/.config/compiz.bak.$(date +%F_%T)
+    fi
+    cp -r configs/compiz ~/.config/
+fi
+
+# Copy Emerald config
+if [ -d "configs/.emerald" ]; then
+    if [ -d "$HOME/.emerald" ]; then
+        mv ~/.emerald ~/.emerald.bak.$(date +%F_%T)
+    fi
+    cp -r configs/.emerald ~/
+fi
+
 # Copy autostart items
 cp -r configs/autostart/* ~/.config/autostart/ 2>/dev/null || true
 
@@ -84,6 +100,15 @@ gsettings set org.mate.peripherals-mouse cursor-theme 'CommodoreOSCursors'
 gsettings set org.mate.background picture-filename '/usr/share/backgrounds/CommodoreOS/CommodoreOS_1920x1200.jpg'
 gsettings set org.mate.background picture-options 'zoom'
 
+# Enable Compiz as the Window Manager
+echo "Configuring Compiz as the default window manager..."
+gsettings set org.mate.session.required-components windowmanager 'compiz'
+if command -v emerald &>/dev/null; then
+    # Configure Emerald theme to CommodoreOS
+    emerald --theme CommodoreOS &>/dev/null &
+    sleep 0.5
+fi
+
 # Restart mate-panel, cairo-dock, and conky if running
 if pgrep -x mate-panel &>/dev/null; then
     echo "Reloading MATE panel..."
@@ -102,6 +127,11 @@ if pgrep -x conky &>/dev/null; then
     killall conky || true
     sleep 1
     DISPLAY=:0 conky >/dev/null 2>&1 &
+fi
+
+if pgrep -x compiz &>/dev/null; then
+    echo "Reloading Compiz..."
+    DISPLAY=:0 compiz --replace >/dev/null 2>&1 &
 fi
 
 echo "================================================"
