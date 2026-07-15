@@ -22,7 +22,7 @@ This repository contains the Commodore OS Vision theme, icons, cursors, retro co
 Clone the repository and run the automated installation script:
 
 ```bash
-git clone https://github.com/your-username/commodore-os-vision-theme.git
+git clone https://github.com/rsomonte/commodore-os-vision-theme.git
 cd commodore-os-vision-theme
 chmod +x install.sh
 ./install.sh
