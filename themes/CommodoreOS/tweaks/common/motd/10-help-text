@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo
+echo "Welcome to Commodore OS Vision"
+echo " * Documentation:  http://www.CommodoreUSA.net/CUSA_CommodoreOSRelease.aspx"
+

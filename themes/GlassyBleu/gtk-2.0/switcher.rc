@@ -1,0 +1,289 @@
+style "switcher-overlay"
+{
+  bg_pixmap[NORMAL] = "/switcher/overlay_background.png"
+}
+widget "harbour_popup_switcher" style "switcher-overlay"
+
+style "switcher"
+{
+  bg[NORMAL] = "black"
+}
+widget "*.switcher_viewport" style "switcher"
+
+style "switcher-single-button"
+{
+  xthickness = 4
+  ythickness = 4
+  engine "pixmap"
+  {
+
+    image
+    {
+      function = FLAT_BOX
+      state = NORMAL
+      file = "/switcher/single_normal.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = PRELIGHT
+      file = "/switcher/single_prelight.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = SELECTED
+      file = "/switcher/single_active.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = ACTIVE
+      file = "/switcher/single_active.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = FLAT_BOX
+      state = INSENSITIVE
+      file = "/switcher/single_insensitive.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+  }
+}
+widget "*.switcher_new_app_tile" style "switcher-single-button"
+widget "*.switcher_no_apps_tile" style "switcher-single-button"
+widget "*.taku-table-tile-single-single" style "switcher-single-button"
+
+style "switcher-middle-button"
+{
+  xthickness = 4
+  ythickness = 4
+  engine "pixmap"
+  {
+    image
+    {
+      function = FLAT_BOX
+      state = NORMAL
+      file = "/switcher/centre_normal.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = FLAT_BOX
+      state = ACTIVE
+      file = "/switcher/centre_active.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = FLAT_BOX
+      state = PRELIGHT
+      file = "/switcher/centre_prelight.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = FLAT_BOX
+      state = SELECTED
+      file = "/switcher/centre_active.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = FLAT_BOX
+      state = INSENSITIVE
+      file = "/switcher/centre_insensitive.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+  }
+}
+widget "*.taku-table-tile-single-middle" style "switcher-middle-button"
+
+style "switcher-first-button"
+{
+  xthickness = 4
+  ythickness = 4
+  engine "pixmap"
+  {
+    image
+    {
+      function = FLAT_BOX
+      state = NORMAL
+      file = "/switcher/end_left_normal.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = FLAT_BOX
+      state = PRELIGHT
+      file = "/switcher/end_left_prelight.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = FLAT_BOX
+      state = ACTIVE
+      file = "/switcher/end_left_active.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = FLAT_BOX
+      state = SELECTED
+      file = "/switcher/end_left_active.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = FLAT_BOX
+      state = INSENSITIVE
+      file = "/switcher/end_left_insensitive.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+  }
+}
+widget "*.taku-table-tile-single-left" style "switcher-first-button"
+
+style "switcher-last-button"
+{
+  xthickness = 4
+  ythickness = 4
+  engine "pixmap"
+  {
+
+    image
+    {
+      function = FLAT_BOX
+      state = NORMAL
+      file = "/switcher/end_right_normal.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = PRELIGHT
+      file = "/switcher/end_right_prelight.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = FLAT_BOX
+      state = ACTIVE
+      file = "/switcher/end_right_active.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = FLAT_BOX
+      state = SELECTED
+      file = "/switcher/end_right_active.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = FLAT_BOX
+      state = INSENSITIVE
+      file = "/switcher/end_right_insensitive.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+  }
+}
+widget "*.taku-table-tile-single-right" style "switcher-last-button"
+
+style "switcher-left-stepper"
+{
+  xthickness = 2
+  engine "pixmap"
+  {
+
+    image
+    {
+      function = FLAT_BOX
+      state = NORMAL
+      file = "/switcher/stepper_left_normal.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = PRELIGHT
+      file = "/switcher/stepper_left_prelight.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = FLAT_BOX
+      state = ACTIVE
+      file = "/switcher/stepper_left_active.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+  }
+}
+widget "*.switcher_left_stepper" style "switcher-left-stepper"
+
+style "switcher-right-stepper"
+{
+  xthickness = 2
+  engine "pixmap"
+  {
+
+    image
+    {
+      function = FLAT_BOX
+      state = NORMAL
+      file = "/switcher/stepper_right_normal.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = PRELIGHT
+      file = "/switcher/stepper_right_prelight.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = FLAT_BOX
+      state = ACTIVE
+      file = "/switcher/stepper_right_active.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+  }
+}
+widget "*.switcher_right_stepper" style "switcher-right-stepper"

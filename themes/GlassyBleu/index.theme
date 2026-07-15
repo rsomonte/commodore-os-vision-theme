@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=GlassyBleu
+Type=X-GNOME-Metatheme
+Comment=HP UMPC theme.  Inspired by Overglossed and GT4 themes.  See http://art.gnome.org
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=GlassyBleu
+MetacityTheme=GlassyBleu
+IconTheme=GlassyBleu
+CursorTheme=default
+CursorSize=24

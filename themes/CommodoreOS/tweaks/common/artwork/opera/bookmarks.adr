@@ -1,0 +1,157 @@
+﻿Opera Hotlist version 2.0
+Options: encoding = utf8, version=15
+
+#FOLDER
+	ID=11
+	NAME=Trash
+	TRASH FOLDER=YES
+	UNIQUEID=56bd213415bf4a29aadf55742db4ea2c
+
+-
+
+#FOLDER
+	ID=12
+	NAME=Opera
+	UNIQUEID=826cf25af11c491899711fc93513a4f4
+
+
+#URL
+	ID=14
+	NAME=Download Opera
+	URL=http://www.opera.com/download/
+	ICONFILE=http://redir.opera.com/favicons/opera/favicon.ico
+	UNIQUEID=6346265318c548dc831b7df6d8ebb577
+
+#URL
+	ID=15
+	NAME=My Opera Community
+	URL=http://my.opera.com/
+	ICONFILE=http://redir.opera.com/favicons/myopera/favicon.ico
+	ON PERSONALBAR=YES
+	PERSONALBAR_POS=1
+	UNIQUEID=6081957b53904ed6bad072d157c8d408
+
+#URL
+	ID=16
+	NAME=Opera Web Mail
+	URL=http://www.operamail.com/
+	ICONFILE=http://redir.opera.com/favicons/opera/favicon.ico
+	UNIQUEID=cf79297898b24364a89ed412d9b43b89
+
+#URL
+	ID=17
+	NAME=Support Desk
+	URL=http://www.opera.com/support/
+	ICONFILE=http://redir.opera.com/favicons/opera/favicon.ico
+	UNIQUEID=bdbbef1fcb2844a980752782e0d9670c
+
+-
+
+#URL
+	ID=21
+	NAME=Download.com
+	URL=http://www.download.com/
+	ICONFILE=http://redir.opera.com/favicons/downloadcom/favicon.ico
+	UNIQUEID=857166b8087a422cb42a6c541c615d94
+
+#URL
+	ID=22
+	NAME=Kayak
+	URL=http://redir.opera.com/bookmarks/kayak
+	ICONFILE=http://redir.opera.com/favicons/kayak/favicon.ico
+	ON PERSONALBAR=YES
+	PERSONALBAR_POS=2
+	UNIQUEID=7CC8A06CEFAC48EEA1D1EF6479BFFB58	
+
+#URL
+	ID=23
+	NAME=Amazon
+	URL=http://redir.opera.com/bookmarks/amazon
+	ICONFILE=http://redir.opera.com/favicons/amazon/favicon.ico
+	ON PERSONALBAR=YES
+	PERSONALBAR_POS=2
+	UNIQUEID=80a0c80a99554c429032e569e083c6c4
+
+#URL
+	ID=24
+	NAME=Ask.com
+	URL=http://www.ask.com/?o=101451&l=dis	
+	ICONFILE=http://redir.opera.com/favicons/ask/favicon.ico
+	UNIQUEID=8548aec0a91849d88412485a7ae85798
+
+#URL
+	ID=25
+	NAME=eBay
+	URL=http://redir.opera.com/bookmarks/ebay
+	ICONFILE=http://redir.opera.com/favicons/ebay/favicon.ico
+	ON PERSONALBAR=YES
+	PERSONALBAR_POS=3
+	UNIQUEID=55da86e6cc334cf9b2f5a38728a63f52
+
+#URL
+	ID=26
+	NAME=Shopping
+	URL=http://redir.opera.com/bookmarks/shopping
+	ICONFILE=http://redir.opera.com/favicons/shopping/favicon.ico
+	UNIQUEID=2490BAD22F5C48B4A78E2EF34194444C
+	
+#URL
+	ID=27
+	NAME=Wikipedia
+	URL=http://en.wikipedia.org/wiki/Main_Page
+	ICONFILE=http://redir.opera.com/favicons/wikipedia/favicon.ico
+	ON PERSONALBAR=YES
+	PERSONALBAR_POS=4
+	UNIQUEID=E86E91A28D61476B92F56F4AF3B75F00
+
+#FOLDER 
+	ID=33 
+	NAME=CommodoreOS 
+	ACTIVE=YES 
+	UNIQUEID=5846DC0098F211DE8A9DCCFC1D71427C 
+
+#URL 
+	ID=43 
+	NAME=CommodoreOS 
+	URL=http://www.linuxmint.com/ 
+	DESCRIPTION=CommodoreOS Homepage 
+	ON PERSONALBAR=YES 
+	PERSONALBAR_POS=5 
+	UNIQUEID=7B58101098F211DE8A9EB73580F05090 
+
+#URL 
+	ID=48 
+	NAME=Forum 
+	URL=http://forums.linuxmint.com/
+	DESCRIPTION=CommodoreOS Forum 
+	ON PERSONALBAR=YES 
+	PERSONALBAR_POS=8 
+	UNIQUEID=DBD23E7098F211DE8AA2CF44C75463E3 
+
+#URL 
+	ID=38 
+	NAME=Artwork 
+	URL=http://www.linuxmint-art.org/ 
+	DESCRIPTION=CommodoreOS Artwork 
+	ON PERSONALBAR=YES 
+	PERSONALBAR_POS=6 
+	UNIQUEID=AA7ADDA098F211DE8AA0BDA38736C881 
+
+#URL 
+	ID=39 
+	NAME=Blog 
+	URL=http://www.linuxmint.com/blog/ 
+	DESCRIPTION=CommodoreOS Blog 
+	ON PERSONALBAR=YES 
+	PERSONALBAR_POS=7 
+	UNIQUEID=B8BA53A098F211DE8AA1CEDE8AC697A8 
+
+#URL 
+	ID=49 
+	NAME=Community 
+	URL=http://community.linuxmint.com/
+	DESCRIPTION=CommodoreOS Wiki 
+	ON PERSONALBAR=YES 
+	PERSONALBAR_POS=9 
+	UNIQUEID=FE5B08A098F211DE8AA38FA7C144C16F
+	

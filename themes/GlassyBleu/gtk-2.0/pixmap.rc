@@ -1,0 +1,77 @@
+
+
+################################
+
+
+
+
+###################################  NEWLY COMMENTED OUT #####################
+##########################################################################################
+#widget_class "*Tool*Button*"      		style "toolbutton"
+#widget_class "*Tool*GtkToggleButton"  		style "toolbutton"
+##class "GtkButton"      				style "button"
+##class "GtkCombo*"       			style "optionmenu"
+##widget_class "*GtkCombo*"       		style "optionmenu"
+##class "GtkOptionMenu"       			style "optionmenu"
+##class "GtkRange"       				style "range"
+##class "GtkFrame"       				style "olddefault"
+##class "GtkImage"					style "murrinestyle"
+##class "GtkProgressBar" 				style "progressbar"
+##widget_class "*ProgressBar*" 			style "progressbar"
+##widget_class "*MenuItem.*ProgressBar*" 		style "progressbar"
+##class "GtkScrollbar"				style "scrollbars"
+##class "GtkStatusbar"				style "statusbar"
+##class "*MenuBar*"				style "menubar"
+##widget_class "*MenuBar.*"			style "menubar"
+##class "*Font*"					style "optionmenu"
+##widget_class "*Entry*Button*"       		style "combobutton"
+##class "GtkEntry"       				style "entry"
+##class "GtkOldEditable"				style "entry"
+##widget_class "*GtkCombo.*Button*" 		style "combobutton"
+##widget_class "*Combo*Entry*"    		style "comboentry"
+##class "GtkHandleBox"				style "olddefault"
+##class "GtkPaned"				style "olddefault"
+##class "GtkSpinButton" 				style "entry"
+##class "GtkCheckButton" 				style "checkbutton"
+##class "GtkCheckMenuItem" 			style "checkbutton-menu"
+##class "GtkRadioButton" 				style "radiobutton"
+##class "GtkCheckMenuItem" 			style "radiobutton-menu"
+##widget "gtk-tooltips" 				style "olddefault"
+##class "PanelDItemEditor"			style "olddefault"
+##class "GtkEventBox"				style "nostyle"
+##class "SPColorSlider"				style "unstyle"
+##widget_class "*.GtkCTree.GtkButton" 		style "listheader"
+##widget_class "*.GtkList.GtkButton" 		style "listheader"
+##widget_class "*.GtkCList.GtkButton" 		style "listheader"
+##class "GtkLayout"				style "layout"
+##class "GtkToolBar"				style "nostyle"
+##widget_class "*SpinButton*" 			style "entry"
+
+##widget_class "*.GtkTreeView.GtkButton" 		style "listheader"
+##widget "*.nautilus-extra-view-widget" style:highest "olddefault" #this seems to fix a blue line above scroll
+###################################  NEWLY COMMENTED OUT #####################
+##########################################################################################
+
+
+###################################   HAD ALREADY BEEN COMMENTED OUT #####################
+##########################################################################################
+#class "GtkEntry"       				style "entry"
+#class "GtkOldEditable"				style "entry"
+#class "MetaFrames"     				style "metacity-frame"
+#class "GtkWindow"      				style "metacity-frame"
+#widget_class "*TextView*"           style "textview"
+#widget_class "*.GtkComboBox*" 			style "entry"
+#widget_class "*.GtkCombo*Entry*"    		style "entrytext"
+# tooltips stuff
+#widget_class "*.tooltips.*.GtkToggleButton" 	style "clearlooks-tasklist"
+#widget_class "*.GtkFrame.GtkLabel" 		style "clearlooks-frame-title"
+# notebook stuff
+#widget_class "*.GtkNotebook.*.GtkEventBox" 	style "aura"
+#widget_class "*.GtkNotebook.*.GtkViewport" 	style "aura"
+# these should really use base and text colors instead
+#widget_class "*GtkCTree*" style "evolution-hack"
+#widget_class "*GtkList*" style "evolution-hack"
+#widget_class "*GtkCList*" style "evolution-hack"
+#widget_class "*.ETree.*" style "evolution-hack"
+###################################   HAD ALREADY BEEN COMMENTED OUT #####################
+##########################################################################################

@@ -1,0 +1,10 @@
+RELEASE=1
+CODENAME=julia
+EDITION="Gnome 64-bit"
+DESCRIPTION="Commodore OS Vision v1.0"
+DESKTOP=Gnome
+TOOLKIT=GTK
+NEW_FEATURES_URL=http://www.commodoreusa.net/CUSA_CommodoreOSRelease.aspx
+RELEASE_NOTES_URL=http://www.commodoreusa.net/CUSA_CommodoreOSRelease.aspx
+USER_GUIDE_URL=http://www.commodoreusa.net/CUSA_CommodoreOSGuide.aspx
+GRUB_TITLE=Commodore OS Vision v1.0

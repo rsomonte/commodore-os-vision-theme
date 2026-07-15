@@ -1,0 +1,247 @@
+
+
+style "launcher_bg"
+{
+  bg_pixmap[NORMAL] = "/program-launcher/applist_background_tile.png"
+}
+widget "launcher_window.*.GtkViewport" style "launcher_bg"
+
+style "program-launcher-tile-border-none"
+{
+  engine "pixmap"
+  {
+    image
+    {
+      function = FLAT_BOX
+      state = NORMAL
+      file = "/program-launcher/cellState_normal.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = PRELIGHT
+      file = "/program-launcher/cellState_prelight.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = SELECTED
+      file = "/program-launcher/cellState_active.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = ACTIVE
+      file = "/program-launcher/cellState_running.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = INSENSITIVE
+      file = "/program-launcher/cellState_normal.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+  }
+}
+
+
+style "program-launcher-tile-border-right"
+{
+  engine "pixmap"
+  {
+    image
+    {
+      function = FLAT_BOX
+      state = NORMAL
+      file = "/program-launcher/cellState_normal_border_right.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = PRELIGHT
+      file = "/program-launcher/cellState_prelight_border_right.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = SELECTED
+      file = "/program-launcher/cellState_active_border_right.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = ACTIVE
+      file = "/program-launcher/cellState_running_border_right.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = INSENSITIVE
+      file = "/program-launcher/cellState_normal_border_right.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+  }
+}
+
+
+style "program-launcher-tile-border-bottom"
+{
+  engine "pixmap"
+  {
+    image
+    {
+      function = FLAT_BOX
+      state = NORMAL
+      file = "/program-launcher/cellState_normal_border_bottom.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = PRELIGHT
+      file = "/program-launcher/cellState_prelight_border_bottom.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = SELECTED
+      file = "/program-launcher/cellState_active_border_bottom.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = ACTIVE
+      file = "/program-launcher/cellState_running_border_bottom.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = INSENSITIVE
+      file = "/program-launcher/cellState_normal_border_bottom.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+  }
+}
+
+style "program-launcher-tile-border-bottom-right"
+{
+  engine "pixmap"
+  {
+    image
+    {
+      function = FLAT_BOX
+      state = NORMAL
+      file = "/program-launcher/cellState_normal_border_right+bottom.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = PRELIGHT
+      file = "/program-launcher/cellState_prelight_border_right+bottom.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = SELECTED
+      file = "/program-launcher/cellState_active_border_right+bottom.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = ACTIVE
+      file = "/program-launcher/cellState_running_border_right+bottom.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+
+    image
+    {
+      function = FLAT_BOX
+      state = INSENSITIVE
+      file = "/program-launcher/cellState_normal_border_right+bottom.png"
+      border = { 18, 18, 18, 18 }
+      stretch = TRUE
+    }
+  }
+}
+
+widget "launcher_window.*.taku-table-tile-single-single" style "program-launcher-tile-border-none"
+widget "launcher_window.*.taku-table-tile-top-single" style "program-launcher-tile-border-bottom"
+widget "launcher_window.*.taku-table-tile-middle-single" style "program-launcher-tile-border-bottom"
+widget "launcher_window.*.taku-table-tile-bottom-single" style "program-launcher-tile-border-none"
+widget "launcher_window.*.taku-table-tile-single-left" style "program-launcher-tile-border-right"
+widget "launcher_window.*.taku-table-tile-single-middle" style "program-launcher-tile-border-right" 
+widget "launcher_window.*.taku-table-tile-single-right" style "program-launcher-tile-border-none"
+widget "launcher_window.*.taku-table-tile-top-left" style "program-launcher-tile-border-bottom-right" 
+widget "launcher_window.*.taku-table-tile-middle-left" style "program-launcher-tile-border-bottom-right" 
+widget "launcher_window.*.taku-table-tile-bottom-left" style "program-launcher-tile-border-right"
+widget "launcher_window.*.taku-table-tile-top-middle" style "program-launcher-tile-border-bottom-right"
+widget "launcher_window.*.taku-table-tile-middle-middle" style "program-launcher-tile-border-bottom-right"
+widget "launcher_window.*.taku-table-tile-bottom-middle" style "program-launcher-tile-border-right"
+widget "launcher_window.*.taku-table-tile-top-right" style "program-launcher-tile-border-bottom"
+widget "launcher_window.*.taku-table-tile-middle-right" style "program-launcher-tile-border-bottom"
+widget "launcher_window.*.taku-table-tile-bottom-right" style "program-launcher-tile-border-none"
+
+widget "settings_window.*.taku-table-tile-single-single" style "program-launcher-tile-border-none"
+widget "settings_window.*.taku-table-tile-top-single" style "program-launcher-tile-border-bottom"
+widget "settings_window.*.taku-table-tile-middle-single" style "program-launcher-tile-border-bottom"
+widget "settings_window.*.taku-table-tile-bottom-single" style "program-launcher-tile-border-none"
+widget "settings_window.*.taku-table-tile-single-left" style "program-launcher-tile-border-right"
+widget "settings_window.*.taku-table-tile-single-middle" style "program-launcher-tile-border-right" 
+widget "settings_window.*.taku-table-tile-single-right" style "program-launcher-tile-border-none"
+widget "settings_window.*.taku-table-tile-top-left" style "program-launcher-tile-border-bottom-right" 
+widget "settings_window.*.taku-table-tile-middle-left" style "program-launcher-tile-border-bottom-right" 
+widget "settings_window.*.taku-table-tile-bottom-left" style "program-launcher-tile-border-right"
+widget "settings_window.*.taku-table-tile-top-middle" style "program-launcher-tile-border-bottom-right"
+widget "settings_window.*.taku-table-tile-middle-middle" style "program-launcher-tile-border-bottom-right"
+widget "settings_window.*.taku-table-tile-bottom-middle" style "program-launcher-tile-border-right"
+widget "settings_window.*.taku-table-tile-top-right" style "program-launcher-tile-border-bottom"
+widget "settings_window.*.taku-table-tile-middle-right" style "program-launcher-tile-border-bottom"
+widget "settings_window.*.taku-table-tile-bottom-right" style "program-launcher-tile-border-none"

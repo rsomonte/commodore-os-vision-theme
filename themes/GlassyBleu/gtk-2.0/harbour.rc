@@ -1,0 +1,417 @@
+style "section-subheader"
+{
+   font_name ="LuzSans-Medium 12"
+      fg[NORMAL] = "#FFFFFF"
+}
+widget "*.favorite_websites_label" style "section-subheader"
+
+style "hp-web-entry"
+{
+
+  xthickness = 5
+  ythickness = 5
+
+  GtkWidget::interior_focus = 1
+  text[INSENSITIVE] = "#666"
+  text[NORMAL] = "#191919"
+  base[NORMAL] = "#282A2B"
+
+  engine "pixmap"
+  {
+
+    image
+    {
+      function = SHADOW
+      file = "/harbour/launcher_URL_textfield.png"
+      border = { 7 , 7 , 7 , 7 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = FLAT_BOX
+      file = "/harbour/launcher_URL_textfield_inner.png"
+      border = { 0, 0, 0, 0 }
+      stretch = TRUE
+    }
+  }
+}
+widget "*.web_entry" style "hp-web-entry"
+
+style "hp-go-button"
+{
+  xthickness = 2
+  ythickness = 2
+  engine "pixmap"
+  {
+    image
+    {
+      function = BOX
+      state = NORMAL
+      file = "/harbour/launcher_URL_button_centre.png"
+      border = { 2 , 2 , 2 ,2 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = BOX
+      state = ACTIVE
+      file = "/harbour/launcher_URL_button_centre_active.png"
+      border = { 7 , 7 , 7 , 7 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = BOX
+      state = PRELIGHT
+      file = "/harbour/launcher_URL_button_centre_prelight.png"
+      border = { 7 , 7 , 7 , 7 }
+      stretch = TRUE
+    }
+  }
+}
+widget "*.web_go_button" style "hp-go-button"
+
+style "hp-search-button"
+{
+  xthickness = 2
+  ythickness = 2
+  engine "pixmap"
+  {
+
+    image
+    {
+      function = BOX
+      state = NORMAL
+      file = "/harbour/launcher_URL_button_right.png"
+      border = { 2 , 2 , 2 ,2 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = BOX
+      state = PRELIGHT
+      file = "/harbour/launcher_URL_button_right_prelight.png"
+      border = { 7 , 7 , 7 , 7 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = BOX
+      state = ACTIVE
+      file = "/harbour/launcher_URL_button_right_active.png"
+      border = { 7 , 7 , 7 , 7 }
+      stretch = TRUE
+    }
+  }
+}
+widget "*.web_search_button" style "hp-search-button"
+
+style "hp-home-background"
+{
+  engine "pixmap"
+  {
+
+    image
+    {
+      function = FLAT_BOX
+      state = NORMAL
+      file = "/harbour/launcher-app-background.png"
+      stretch = FALSE
+    }
+  }
+}
+widget "*harbour_home_background" style "hp-home-background"
+
+style "hp-home-background-576"
+{
+  engine "pixmap"
+  {
+
+    image
+    {
+      function = FLAT_BOX
+      state = NORMAL
+      file = "/harbour/launcher-app-background-576.png"
+      stretch = FALSE
+    }
+  }
+}
+widget "*harbour_home_background_576" style "hp-home-background-576"
+
+style "whitefg"
+{
+  fg[NORMAL] = "white"
+  bg[NORMAL] = "black"
+}
+widget "harbour_home_window.*" style "whitefg"
+widget "welcome_window.*" style "whitefg"
+widget "launcher_window.*.taku_secondary_text" style "whitefg"
+
+
+style "slot-background"
+{
+  engine "pixmap"
+  {
+    image
+    {
+      function = FLAT_BOX
+      file = "/harbour/thumbnail_web_empty.png"
+      stretch = TRUE
+      border = { 4, 4, 4, 4 }
+    }
+  }
+}
+widget "*.web_eventbox1" style "slot-background"
+widget "*.web_eventbox2" style "slot-background"
+widget "*.web_eventbox3" style "slot-background"
+widget "*.web_eventbox4" style "slot-background"
+widget "*.music_eventbox1" style "slot-background"
+widget "*.music_eventbox2" style "slot-background"
+widget "*.music_eventbox3" style "slot-background"
+widget "*.photo_eventbox1" style "slot-background"
+widget "*.photo_eventbox2" style "slot-background"
+widget "*.photo_eventbox3" style "slot-background"
+
+style "welcome_background"
+{
+  bg_pixmap[NORMAL]  = "/harbour/yourHomeScreen_background.png"
+  engine "pixmap"
+  {
+    image
+    {
+       function = FLAT_BOX
+       file = "/harbour/yourHomeScreen_background.png"
+       stretch = TRUE
+       border = {0, 0, 0, 0}
+    }
+  }
+}
+widget "welcome_window" style "welcome_background"
+
+style "paleblue"
+{
+	fg[NORMAL] = "#99CCFF"
+}
+widget "*.date_label" style "paleblue"
+widget "launcher_window.*.taku_primary_text" style "paleblue"
+widget "welcome_window.*.your_home_screen_label" style "paleblue"
+
+style "section-header"  
+{
+	font_name ="LuzSans-Medium 14"
+}
+widget "*.username_label" style "section-header"
+widget "*.mail_label" style "section-header"
+widget "*.web_label" style "section-header"
+widget "*.music_label" style "section-header"
+widget "*.photos_label" style "section-header"
+widget "*.start_program_label" style "section-header"
+widget "*.your_home_screen_label" style "section-header"
+
+style "embiggen"
+{
+	font_name = "Liberation Sans 11"
+}
+widget "*.mail_status_label" style "embiggen"
+
+style "vpadding" {
+	ythickness = 5
+}
+widget "*.username_label" style "vpadding"
+
+style "top-buttons"
+{
+	xthickness = 10
+	
+	engine "pixmap"
+	{
+	    image 
+      	{
+        	function        = BOX
+			recolorable     = TRUE
+			state           = PRELIGHT
+			shadow          = OUT
+			file            = "/general/transparency.png"
+			border          = { 0,0,0,0 }
+			stretch         = TRUE
+      	}
+      	image 
+      	{
+        	function        = BOX
+			recolorable     = TRUE
+			state           = ACTIVE
+			shadow          = IN
+			file            = "/general/transparency.png"
+			border          = { 0,0,0,0 }
+			stretch         = TRUE
+      	}
+	    image 
+      	{
+        	function        = BOX
+			recolorable     = TRUE
+			state           = SELECTED
+			shadow          = IN
+			file            = "/general/transparency.png"
+			border          = { 0,0,0,0 }
+			stretch         = TRUE
+      	}		
+	}
+	
+}
+widget "*.files_button" style "top-buttons"
+widget "*.settings_button" style "top-buttons"
+widget "*.logout_button" style "top-buttons"
+widget "*.files_button1" style "top-buttons"
+widget "*.settings_button1" style "top-buttons"
+widget "*.logout_button1" style "top-buttons"
+
+style "top-button-labels"
+{
+  font_name ="Liberation Sans 10"
+	fg[NORMAL] = "#CCCCCC"
+	fg[PRELIGHT] = "#FFFFFF"
+	fg[ACTIVE] = "#c0d3e5"
+	
+}
+widget "*.files_button.*" style "top-button-labels"
+widget "*.settings_button.*" style "top-button-labels"
+widget "*.logout_button.*" style "top-button-labels"
+widget "*.files_button1.*" style "top-button-labels"
+widget "*.settings_button1.*" style "top-button-labels"
+widget "*.logout_button1.*" style "top-button-labels"
+
+style "hp-prev-button"
+{
+  xthickness = 5
+  ythickness = 5
+  engine "pixmap"
+  {
+    image
+    {
+      function = BOX
+      state = NORMAL
+      file = "/harbour/button_previous_normal.png"
+      border = { 0 , 0 , 0 ,0 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = BOX
+      state = ACTIVE
+      file = "/harbour/button_previous_active.png"
+      border = { 0 , 0 , 0 , 0 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = BOX
+      state = PRELIGHT
+      file = "/harbour/button_previous_prelight.png"
+      border = { 0 , 0 , 0 , 0 }
+      stretch = TRUE
+    }
+  }
+}
+widget "*.media_prev_button" style "hp-prev-button"
+
+style "hp-next-button"
+{
+  xthickness = 5
+  ythickness = 5
+  engine "pixmap"
+  {
+    image
+    {
+      function = BOX
+      state = NORMAL
+      file = "/harbour/button_next_normal.png"
+      border = { 0 , 0 , 0 ,0 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = BOX
+      state = ACTIVE
+      file = "/harbour/button_next_active.png"
+      border = { 0 , 0 , 0 , 0 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = BOX
+      state = PRELIGHT
+      file = "/harbour/button_next_prelight.png"
+      border = { 0 , 0 , 0 , 0 }
+      stretch = TRUE
+    }
+  }
+}
+widget "*.media_next_button" style "hp-next-button"
+
+style "hp-play-button"
+{
+  xthickness = 5
+  ythickness = 5
+  engine "pixmap"
+  {
+    image
+    {
+      function = BOX
+      state = NORMAL
+      file = "/harbour/button_play_normal.png"
+      border = { 0 , 0 , 0 ,0 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = BOX
+      state = ACTIVE
+      file = "/harbour/button_play_active.png"
+      border = { 0 , 0 , 0 , 0 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = BOX
+      state = PRELIGHT
+      file = "/harbour/button_play_prelight.png"
+      border = { 0 , 0 , 0 , 0 }
+      stretch = TRUE
+    }
+  }
+}
+widget "*.media_play_button" style "hp-play-button"
+
+style "hp-pause-button"
+{
+  xthickness = 5
+  ythickness = 5
+  engine "pixmap"
+  {
+    image
+    {
+      function = BOX
+      state = NORMAL
+      file = "/harbour/button_pause_normal.png"
+      border = { 0 , 0 , 0 ,0 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = BOX
+      state = ACTIVE
+      file = "/harbour/button_pause_active.png"
+      border = { 0 , 0 , 0 , 0 }
+      stretch = TRUE
+    }
+    image
+    {
+      function = BOX
+      state = PRELIGHT
+      file = "/harbour/button_pause_prelight.png"
+      border = { 0 , 0 , 0 , 0 }
+      stretch = TRUE
+    }
+  }
+}
+widget "*.media_pause_button" style "hp-pause-button"

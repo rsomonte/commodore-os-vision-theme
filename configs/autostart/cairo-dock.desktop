@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=cairo-dock -k
+Hidden=false
+Name[en_US]=Cairo-Dock
+Name=Cairo-Dock
+Comment[en_US]=Light and eye-candy filled dock and desklets for your desktop.
+Comment=Light and eye-candy filled dock and desklets for your desktop.
+X-MATE-Autostart-Delay=2

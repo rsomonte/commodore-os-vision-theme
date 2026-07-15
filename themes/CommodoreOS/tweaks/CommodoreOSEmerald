@@ -1,0 +1,167 @@
+[splash]
+as_background = /lib/plymouth/ubuntu-logo.png
+as_logo = 
+as_display_time = 0.600000
+
+[opacify]
+as_timeout = 0
+s0_active_opacity = 90
+s0_passive_opacity = 90
+
+[decoration]
+as_shadow_radius = 9.000000
+
+[put]
+as_put_left_key = Disabled
+as_put_right_key = Disabled
+as_put_top_key = Disabled
+as_put_bottom_key = Disabled
+as_put_topleft_key = Disabled
+as_put_topright_key = Disabled
+as_put_bottomleft_key = Disabled
+as_put_bottomright_key = Disabled
+
+[showmouse]
+s0_num_particles = 2000
+s0_size = 4.739400
+s0_slowdown = 6.157200
+s0_life = 0.854900
+s0_darken = 0.140500
+s0_color = #7a8ff9ff
+s0_rotation_speed = 0.100000
+s0_radius = 10
+s0_emiters = 1
+
+[gnomecompat]
+as_run_command_terminal_key = <Control><Alt>t
+
+[ezoom]
+as_zoom_in_button = Disabled
+as_zoom_out_button = Disabled
+as_zoom_box_button = Disabled
+
+[cubeaddon]
+s0_deformation = 0
+
+[animation]
+s0_open_effects = animation:Glide 1;animation:Random;animation:Glide 1;animation:Dream;
+s0_open_durations = 500;300;300;200;
+s0_open_matches = ((type=Normal | Unknown) | name=sun-awt-X11-XFramePeer | name=sun-awt-X11-XDialogPeer) & !(role=toolTipTip | role=qtooltip_label) & !(type=Normal & override_redirect=1) & !(name=gnome-screensaver);(type=Menu | DropDownMenu | Dialog | ModalDialog | Normal);(type=Tooltip | Notification | Utility) & !(name=compiz) & !(title=notify-osd);PopupMenu;
+s0_open_options = ;;;;
+s0_open_random_effects = animation:Sidekick;
+s0_close_effects = animationaddon:Explode;animation:Random;animation:None;animation:Dream;
+s0_close_durations = 1000;1000;150;200;
+s0_close_matches = ((type=Normal | Unknown) | name=sun-awt-X11-XFramePeer | name=sun-awt-X11-XDialogPeer) & !(role=toolTipTip | role=qtooltip_label) & !(type=Normal & override_redirect=1) & !(name=gnome-screensaver);(type=Menu | DropDownMenu | Dialog | ModalDialog | Normal);(type=Tooltip | Notification | Utility) & !(name=compiz) & !(title=notify-osd);PopupMenu;
+s0_close_options = ;;;;
+s0_close_random_effects = animation:Sidekick;
+s0_minimize_effects = animationaddon:Burn;
+s0_shade_durations = 4000;
+s0_focus_effects = animation:Focus Fade;
+s0_focus_durations = 500;
+
+[animationaddon]
+s0_fire_color = #94a3ffff
+s0_explode_thickness = 6.012300
+s0_glide3_away_position = -0.500000
+s0_time_step_intense = 20
+
+[staticswitcher]
+as_next_key = Disabled
+as_prev_key = Disabled
+as_prev_all_key = Disabled
+
+[addhelper]
+as_brightness = 100
+as_saturation = 100
+as_opacity = 80
+
+[firepaint]
+s0_fire_color = #86acffff
+
+[thumbnail]
+s0_thumb_size = 300
+s0_border = 15
+s0_thumb_color = #b0bcfe7f
+s0_current_viewport = false
+s0_window_like = false
+s0_title_enabled = false
+s0_font_size = 6
+s0_font_color = #b8c1fcff
+
+[shift]
+as_next_key = <Alt>Tab
+as_prev_key = <Shift><Alt>Tab
+s0_ground_color1 = #3962ffcc
+s0_ground_color2 = #0015a800
+s0_title_font_bold = true
+s0_title_back_color = #3246d699
+s0_title_font_color = #adcdffff
+
+[cube]
+as_next_slide_key = Disabled
+s0_color = #6e73ffff
+s0_scale_image = true
+s0_skydome_animated = true
+s0_skydome_gradient_end_color = #7784f9ff
+s0_active_opacity = 50.000000
+
+[scaleaddon]
+as_zoom_button = Disabled
+
+[workarounds]
+as_legacy_fullscreen = true
+as_firefox_menu_fix = true
+as_notification_daemon_fix = true
+as_qt_fix = true
+
+[reflex]
+s0_threshold = 5
+
+[shelf]
+as_trigger_key = <Super>Down
+as_animtime = 300
+
+[obs]
+s0_opacity_matches = DropdownMenu;((type=Normal | Unknown) | name=sun-awt-X11-XFramePeer | name=sun-awt-X11-XDialogPeer) & !(role=toolTipTip | role=qtooltip_label) & !(type=Normal & override_redirect=1) & !(name=gnome-screensaver);PopupMenu;(type=Tooltip | Notification | Utility) & !(name=compiz) & !(title=notify-osd);Dialog | ModalDialog | Normal);
+s0_opacity_values = 85;92;85;90;90;
+
+[commands]
+as_command8 = gnome-system-monitor
+as_run_command8_key = <Control><Alt>Delete
+
+[expo]
+as_expo_key = <Super>Tab
+as_zoom_time = 1.000000
+as_deform = 2
+as_ground_color1 = #2c49c6cc
+as_ground_color2 = #0016b500
+
+[rotate]
+s0_speed = 1.300000
+s0_zoom = 0.300000
+
+[fade]
+s0_fullscreen_visual_bell = true
+
+[core]
+as_active_plugins = core;ccp;move;resize;place;decoration;water;splash;svg;video;imgjpeg;png;regex;gnomecompat;screenshot;text;dbus;session;firepaint;neg;shift;workarounds;shelf;commands;mousepoll;snap;animation;animationaddon;resizeinfo;wobbly;thumbnail;obs;fade;cube;expo;rotate;3d;scale;scaleaddon;kdecompat;bench;
+as_autoraise = false
+as_autoraise_delay = 500
+as_maximize_window_key = Disabled
+as_show_desktop_key = <Super>d
+as_toggle_window_maximized_key = <Alt>F10
+as_toggle_window_shaded_key = Disabled
+
+[resize]
+as_mode = 0
+as_border_color = #707aee64
+as_fill_color = #0b0d331e
+
+[switcher]
+as_next_key = Disabled
+
+[zoom]
+s0_speed = 3.820400
+s0_timestep = 9.200000
+s0_zoom_factor = 1.103600
+

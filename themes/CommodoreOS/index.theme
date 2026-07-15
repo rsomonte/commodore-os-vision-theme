@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=CommodoreOS
+Comment=Commodore OS Vision main theme. A cyber-looking theme with blue colors.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=CommodoreOS
+MetacityTheme=HighContrastInverse
+IconTheme=CommodoreOSIcons
+CursorTheme=CommodoreOSCursors
+CursorSize=24
+BackgroundImage=/usr/share/backgrounds/CommodoreOS/CommodoreOS_1920x1200.jpg
+GtkColorScheme=fg_color:#b3c5f9,bg_color:#232ba9,base_color:#4044cc,text_color:#b3c5f9,tooltip_fg_color:#b3c5f9,tooltip_bg_color:#232ba9
