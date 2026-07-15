@@ -12,6 +12,7 @@ This repository contains the Commodore OS Vision theme, icons, cursors, retro co
     *   *C64*: `C64 Pro`, `Commodore Angled`, `Commodore Rounded`
     *   *Sci-Fi / Terminals*: `Orbitron` (Black, Bold, Light, Medium), `Furore`, `TerminalVector`
 *   **Pre-configured Layouts**: Automation for **Cairo-Dock** (configured with VIC-20/Amiga style icons) and **Conky** system monitors.
+<img width="1920" height="1080" alt="Screenshot at 2026-07-15 16-25-34" src="https://github.com/user-attachments/assets/511fc517-076b-401c-acb7-450ee470b922" />
 
 ---
 
